@@ -4,15 +4,15 @@
 
 This repository is an open-source timeline of the history for the Pirate Chain network. This is open-source, please improve this page by submitting a PR
 
-live timeline: [https://scott-ftf.github.io/pirate-timeline/](https://scott-ftf.github.io/pirate-timeline/)
+live timeline: [https://s-ftf.github.io/pirate-timeline/](https://s-ftf.github.io/pirate-timeline/)
 
 ***
 
 ## How to add a new post
 
-1. Upload an image to `assets/img/posts/`: [UPLOAD IMAGES](https://github.com/scott-ftf/pirate-timeline/upload/main/assets/img/posts) 
+1. Upload an image to `assets/img/posts/`: [UPLOAD IMAGES](https://github.com/s-ftf/pirate-timeline/upload/main/assets/img/posts) 
 
-2. Create a new markdown file in the `_milestones` directory: [NEW MILESTONE](https://github.com/scott-ftf/pirate-timeline/new/main/_milestones)
+2. Create a new markdown file in the `_milestones` directory: [NEW MILESTONE](https://github.com/s-ftf/pirate-timeline/new/main/_milestones)
 
 3. Enter a filename which _MUST_ be the date in YYYY-MM-DD format, followed by the Title and .md extension. For example, `2018-08-29-The-Title.md`
 
@@ -24,7 +24,7 @@ live timeline: [https://scott-ftf.github.io/pirate-timeline/](https://scott-ftf.
 
 Example post:
 
-filename: [2018-08-29-The-Idea.md](https://raw.githubusercontent.com/scott-ftf/pirate-timeline/main/_milestones/2018-08-29-The-Idea.md)
+filename: [2018-08-29-The-Idea.md](https://raw.githubusercontent.com/s-ftf/pirate-timeline/main/_milestones/2018-08-29-The-Idea.md)
 ```YAML
 ---
 date: 2018-08-29 00:00:00
