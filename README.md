@@ -35,9 +35,14 @@ and `jekyll serve` automatically uses the local server's URL.
 For a production build and a check of local links and metadata, run:
 
 ```sh
-bundle exec jekyll build
-python3 scripts/check_site.py _site
+JEKYLL_ENV=production bundle exec jekyll build --destination _site-production
+python3 scripts/check_site.py _site-production
 ```
+
+The preview uses `_site`; the production check uses `_site-production` so it
+can run while the preview is open without replacing its generated pages.
+If the preview loses styles after a build into `_site`, stop the server with
+Ctrl+C and run the preview command again to rebuild it with local settings.
 
 `url`, `baseurl`, and `repo` in `_config.yml` describe this repository's
 deployment. A fork should set those values for its own deployment. Shared

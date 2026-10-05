@@ -23,8 +23,8 @@ jobs:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll doctor
-          bundle exec jekyll build
-          python3 scripts/check_site.py _site
+          bundle exec jekyll build --destination _site-production
+          python3 scripts/check_site.py _site-production
       - name: Check asset paths at the domain root
         run: |
           bundle exec jekyll build --baseurl "" --destination "$RUNNER_TEMP/site-local"
