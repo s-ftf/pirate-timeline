@@ -8,9 +8,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  var links = document.links;
-  for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-          links[i].target = '_blank';
-          links[i].rel = 'noopener noreferrer';
-  }
+  var timelineElements = document.querySelectorAll('.timeline, .timeline ~ *');
+
+  timelineElements.forEach(function(element) {
+    var links = element.getElementsByTagName('a');
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].target = '_blank';
+      links[i].rel = 'noopener noreferrer';
+    }
+  });
 });
