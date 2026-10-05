@@ -9,6 +9,7 @@
 /.bundle/
 
 # Local environment and editor/OS files
+/.aws
 .env
 .env.*
 !.env.example

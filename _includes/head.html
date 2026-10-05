@@ -29,8 +29,6 @@
 
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
   <link rel="icon" href="{{ '/assets/img/site/Pirate_Logo_Skull_Gold.svg' | relative_url }}" sizes="any" type="image/svg+xml" />
-  <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}" />
-  {% include links.html %}
-  <script defer src="{{ '/assets/js/global.js' | relative_url }}"></script>
-  <script>window.siteBaseurl = {{ site.baseurl | jsonify }}; window.url = {{ site.url | jsonify }};</script>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+  <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
 </head>
