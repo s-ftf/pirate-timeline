@@ -1,6 +1,19 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-.bundle/
+# Jekyll output and caches
+/_site*/
+/.sass-cache/
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Local Ruby dependencies and Bundler settings
+/vendor/
+/.bundle/
+
+# Local environment and editor/OS files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~

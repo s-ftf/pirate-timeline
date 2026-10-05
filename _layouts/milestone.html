@@ -1,0 +1,8 @@
+---
+layout: page
+---
+<main class="content">
+  <p>{{ page.date | date: "%B %d, %Y" }}</p>
+  {% include milestone-content.html content=content %}
+  <p><a href="{{ '/' | relative_url }}">Back to the timeline</a></p>
+</main>

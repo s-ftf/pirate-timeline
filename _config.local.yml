@@ -1,0 +1,4 @@
+# Optional overrides for a preview at the domain root.
+# Jekyll reads the later file last: --config _config.yml,_config.local.yml
+url: "http://localhost:4000"
+baseurl: ""

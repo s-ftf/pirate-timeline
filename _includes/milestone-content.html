@@ -1,0 +1,4 @@
+{%- assign asset_root = '/assets/' | relative_url -%}
+{%- assign image_prefix = 'src="' | append: asset_root -%}
+{%- assign link_prefix = 'href="' | append: asset_root -%}
+{{- include.content | replace: 'src="assets/', image_prefix | replace: 'href="assets/', link_prefix -}}

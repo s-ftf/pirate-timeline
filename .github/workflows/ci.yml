@@ -1,0 +1,31 @@
+name: Check Jekyll site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Check production build and local links
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll doctor
+          bundle exec jekyll build
+          python3 scripts/check_site.py _site
+      - name: Check preview at the domain root
+        run: |
+          bundle exec jekyll build --config _config.yml,_config.local.yml --destination "$RUNNER_TEMP/site-local"
+          python3 scripts/check_site.py "$RUNNER_TEMP/site-local" --baseurl "" --url http://localhost:4000

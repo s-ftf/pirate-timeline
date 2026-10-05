@@ -1,38 +1,36 @@
-<html lang="en">
-  <head>
-    <title>{{ site.title }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="keywords" content="{{ site.keywords }}" />
-    <meta name="description" content="{{ site.description }}" />  
-    <meta name="author" content="Pirate Chain" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#151326" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <meta charset="utf-8" />
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <meta name="keywords" content="{{ site.keywords | escape }}" />
+  <meta name="description" content="{{ site.description | strip | escape }}" />
+  <meta name="author" content="Pirate Chain" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#151326" />
+  <meta name="robots" content="index, follow" />
 
-    <!--Open Graph Tags-->
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:url" content="{{ site.baseurl }}" />
-    <meta property="og:site_name" content="Pirate Chain" />
-    <meta property="og:image" content="{{ site.featured }}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:type" content="image/jpeg" />
+  <!-- Open Graph -->
+  <meta property="og:locale" content="{{ site.locale | escape }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}" />
+  <meta property="og:description" content="{{ site.description | strip | escape }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:site_name" content="{{ site.title | escape }}" />
+  <meta property="og:image" content="{{ site.featured | absolute_url }}" />
+  <meta property="og:image:width" content="{{ site.featured_width }}" />
+  <meta property="og:image:height" content="{{ site.featured_height }}" />
+  <meta property="og:image:type" content="{{ site.featured_type | escape }}" />
 
-    <!--Twitter Card Tags-->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@PirateChain" />
-    <meta name="twitter:description" content="{{ site.description }}" />
-    <meta name="twitter:title" content="{{ site.title }}" />
-    <meta name="twitter:image" content="{{ site.featured }}" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@PirateChain" />
+  <meta name="twitter:description" content="{{ site.description | strip | escape }}" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}" />
+  <meta name="twitter:image" content="{{ site.featured | absolute_url }}" />
 
-    <!--Link Tags-->
-    <link rel="canonical" href="https://arrrmada.com{{ page.permalink | default: page.url }}" />
-    <link rel="icon" href="{{ site.baseurl }}assets/img/site/Pirate_Logo_Skull_Gold.svg" sizes="any" type="image/svg+xml" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/global.css" />
-    {% include links.html %}
-    <script type="text/javascript" src="{{ site.baseurl }}assets/js/global.js"></script>
-    <script>window.siteBaseurl = '{{ site.baseurl }}';window.url = '{{ site.url }}';</script>    
-  </head>
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="icon" href="{{ '/assets/img/site/Pirate_Logo_Skull_Gold.svg' | relative_url }}" sizes="any" type="image/svg+xml" />
+  <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}" />
+  {% include links.html %}
+  <script defer src="{{ '/assets/js/global.js' | relative_url }}"></script>
+  <script>window.siteBaseurl = {{ site.baseurl | jsonify }}; window.url = {{ site.url | jsonify }};</script>
+</head>

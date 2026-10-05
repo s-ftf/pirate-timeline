@@ -1,34 +1,46 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 encoding: utf-8
+lang: en
+locale: en_US
+timezone: UTC
+
 title: Pirate Chain Timeline
 keywords: cryptocurrency, privacy, pirate chain, arrr, fungible
 email: marketing@pirate.black
-description: >- 
-  See what has already been accomplished and what’s planned for the future for the open source, Pirate Chain community.
-baseurl: "" 
-url: "" 
-repo: "https://github.com/scott-ftf/pirate-timeline"
-featured: "https://raw.githubusercontent.com/scott-ftf/pirate-timeline/main/assets/img/site/featured-image.png"
+description: >-
+  See what has already been accomplished and what's planned for the future
+  for the open source Pirate Chain community.
+
+# Production GitHub Pages address. For a preview at localhost:4000,
+# run bundle exec jekyll serve --livereload --baseurl "".
+url: "https://s-ftf.github.io"
+baseurl: "/pirate-timeline"
+repo: "https://github.com/s-ftf/pirate-timeline"
+featured: "/assets/img/site/featured-image.png"
+featured_width: 1200
+featured_height: 632
+featured_type: image/png
+
+strict_front_matter: true
 
 collections:
   milestones:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: milestones
+    values:
+      layout: milestone
+
+# These are repository/development files, not published site content.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - vendor
+  - .bundle
+  - .github
+  - scripts
+  - node_modules

@@ -6,6 +6,36 @@ This repository is an open-source timeline of the history for the Pirate Chain n
 
 live timeline: [https://s-ftf.github.io/pirate-timeline/](https://s-ftf.github.io/pirate-timeline/)
 
+## Run locally
+
+Use Ruby 3.4.10 (also specified in `.ruby-version`) and the Bundler version
+recorded in `Gemfile.lock`. From the repository root:
+
+```sh
+gem install bundler -v 4.0.22 --user-install
+bundle config set --local path vendor/bundle
+bundle install
+bundle exec jekyll serve --livereload --baseurl ""
+```
+
+Open <http://localhost:4000>. Keep the terminal open while editing; changes to
+milestones and assets rebuild the site and refresh the browser. Press Ctrl+C
+to stop. Restart the server after editing `_config.yml`.
+
+For a production build and a check of local links and metadata, run:
+
+```sh
+bundle exec jekyll build
+python3 scripts/check_site.py _site
+```
+
+`url`, `baseurl`, and `repo` in `_config.yml` describe this repository's
+deployment. A fork should set those values for its own deployment. Shared
+templates use them to generate page and asset URLs.
+
+The GitHub Actions build check verifies production and local preview paths.
+Publishing still uses the existing GitHub Pages setup.
+
 ***
 
 ## How to add a new post

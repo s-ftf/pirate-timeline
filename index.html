@@ -5,9 +5,9 @@ css-list:
 ---
 <!-- hero section -->
 <section class="hero-section"
-  style="background-image: url('{{ site.baseurl }}assets/img/site/pirate_map.jpg');">
+  style="background-image: url('{{ '/assets/img/site/pirate_map.jpg' | relative_url }}');">
   <div class="content">      
-    <img class="logo" alt="Pirate Chain logo" src="{{ site.baseurl }}assets/img/site/Pirate_Logo_Stacked_WG.svg"/>
+    <img class="logo" alt="Pirate Chain logo" src="{{ '/assets/img/site/Pirate_Logo_Stacked_WG.svg' | relative_url }}"/>
     <div>
       <h1><span class="arrr">Charting the Course</span></h1>
       <strong>Our Voyage to Fiscal Sovereignty</strong>
@@ -26,22 +26,22 @@ css-list:
       <p class="start-date">Pirate Chain's Journey Begins</p>
     </div>
     <div class="timeline">
-      <img src="{{ site.baseurl }}assets/img/site/Pirate_Logo_Ship_Gold_Gradient.svg" class="timeline-marker start-marker" alt="Start Marker">
+      <img src="{{ '/assets/img/site/Pirate_Logo_Ship_Gold_Gradient.svg' | relative_url }}" class="timeline-marker start-marker" alt="Start Marker">
 
       {% assign sorted_posts = site.milestones | sort: 'date' %}
       {% for post in sorted_posts %}
         <div class="item">
-          <img src="{{ site.baseurl }}assets/img/site/anchor.svg" class="timeline-marker" alt="Timeline Marker">
+          <img src="{{ '/assets/img/site/anchor.svg' | relative_url }}" class="timeline-marker" alt="Timeline Marker">
           <div class="post {% cycle 'left', 'right' %}">
             <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
             <div class="post-content">
-              {{ post.content }}
+              {% include milestone-content.html content=post.content %}
             </div>
           </div>
         </div>
       {% endfor %}
 
-      <img src="{{ site.baseurl }}assets/img/site/Pirate_Logo_Coin_Gold.svg" class="timeline-marker end-marker" alt="End Marker">
+      <img src="{{ '/assets/img/site/Pirate_Logo_Coin_Gold.svg' | relative_url }}" class="timeline-marker end-marker" alt="End Marker">
     </div>
 
     <div class="website">
