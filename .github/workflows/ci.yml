@@ -25,7 +25,7 @@ jobs:
           bundle exec jekyll doctor
           bundle exec jekyll build
           python3 scripts/check_site.py _site
-      - name: Check preview at the domain root
+      - name: Check asset paths at the domain root
         run: |
-          bundle exec jekyll build --config _config.yml,_config.local.yml --destination "$RUNNER_TEMP/site-local"
-          python3 scripts/check_site.py "$RUNNER_TEMP/site-local" --baseurl "" --url http://localhost:4000
+          bundle exec jekyll build --baseurl "" --destination "$RUNNER_TEMP/site-local"
+          python3 scripts/check_site.py "$RUNNER_TEMP/site-local" --baseurl ""

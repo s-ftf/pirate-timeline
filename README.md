@@ -9,18 +9,28 @@ live timeline: [https://s-ftf.github.io/pirate-timeline/](https://s-ftf.github.i
 ## Run locally
 
 Use Ruby 3.4.10 (also specified in `.ruby-version`) and the Bundler version
-recorded in `Gemfile.lock`. From the repository root:
+recorded in `Gemfile.lock`. Run this setup once from the repository root:
 
 ```sh
 gem install bundler -v 4.0.22 --user-install
 bundle config set --local path vendor/bundle
 bundle install
+```
+
+Each time you want to preview the site, run:
+
+```sh
 bundle exec jekyll serve --livereload --baseurl ""
 ```
 
 Open <http://localhost:4000>. Keep the terminal open while editing; changes to
 milestones and assets rebuild the site and refresh the browser. Press Ctrl+C
 to stop. Restart the server after editing `_config.yml`.
+Run `bundle install` again whenever `Gemfile` or `Gemfile.lock` changes.
+
+The site uses one `_config.yml` for deployment and local previews. The
+`--baseurl ""` option overrides the GitHub Pages project path for the preview,
+and `jekyll serve` automatically uses the local server's URL.
 
 For a production build and a check of local links and metadata, run:
 
@@ -33,7 +43,7 @@ python3 scripts/check_site.py _site
 deployment. A fork should set those values for its own deployment. Shared
 templates use them to generate page and asset URLs.
 
-The GitHub Actions build check verifies production and local preview paths.
+The GitHub Actions build check verifies production and root asset paths.
 Publishing still uses the existing GitHub Pages setup.
 
 ***
