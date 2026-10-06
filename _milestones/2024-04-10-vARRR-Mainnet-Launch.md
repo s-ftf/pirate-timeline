@@ -1,8 +1,8 @@
 ---
 date: 2024-04-10 00:00:00
-# Image source: https://piratechain.com/wp-content/uploads/varrr.svg
+# Image source: https://piratechain.com/wp-content/uploads/varrr-fi.webp
 title: "vARRR Mainnet Launch"
-image: "vARRR.svg"
+image: "vARRR-Mainnet-Launch.webp"
 links:
   - https://piratechain.com/v-arrr/
 ---
