@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="841" height="410" viewBox="0 0 841 410" role="img" aria-labelledby="title description">
+  <title id="title">Ironwood migration statistics</title>
+  <desc id="description">The official explorer's hourly ARRR-in-Ironwood chart, exported on October 6, 2026 (UTC). At this snapshot, Ironwood holds 2,204,918 ARRR, or 1.12% of funds in the active shielded pools. Source: https://explorer.piratechain.com/stats/</desc>
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .axis text { fill: #6f7590; font-size: 11px; }
+    .baseline { stroke: #3a3a58; }
+    .gridline { stroke: #2a2a42; }
+  </style>
+  <rect width="841" height="410" rx="16" fill="#202033"/>
+  <text x="24" y="38" fill="#cacbd2" font-size="26" font-weight="bold">Ironwood migration</text>
+  <text x="24" y="66" fill="#9aa1ad" font-size="16">ARRR in Ironwood · hourly since activation</text>
+  <text x="24" y="102" fill="#2c9c73" font-size="24" font-weight="bold">2,204,918 ARRR · 1.12% of shielded funds</text>
+  <svg x="24" y="128" width="793" height="230" viewBox="0 0 793 230">
+    <g class="axis">
+      <line class="baseline" x1="22.8" x2="781" y1="206" y2="206"/>
+      <text x="14.8" y="206" dy="4" text-anchor="end">0</text>
+      <line class="gridline" x1="22.8" x2="781" y1="140.7" y2="140.7"/>
+      <text x="14.8" y="140.7" dy="4" text-anchor="end">1M</text>
+      <line class="gridline" x1="22.8" x2="781" y1="75.3" y2="75.3"/>
+      <text x="14.8" y="75.3" dy="4" text-anchor="end">2M</text>
+      <line class="gridline" x1="22.8" x2="781" y1="10" y2="10"/>
+      <text x="14.8" y="10" dy="4" text-anchor="end">3M</text>
+      <text x="29.8" y="224" text-anchor="start">Oct 3 19:00</text>
+      <text x="184.3" y="224" text-anchor="middle">06:00</text>
+      <text x="324.7" y="224" text-anchor="middle">16:00</text>
+      <text x="479.1" y="224" text-anchor="middle">03:00</text>
+      <text x="619.5" y="224" text-anchor="middle">13:00</text>
+      <text x="774" y="224" text-anchor="end">Oct 6 00:00</text>
+    </g>
+    <path d="M29.8 206.0L43.9 204.5L57.9 178.4L71.9 174.8L86.0 174.8L100.0 173.7L114.1 173.7L128.1 173.2L142.1 148.0L156.2 147.9L170.2 147.9L184.3 147.9L198.3 147.8L212.4 147.6L226.4 147.3L240.4 147.3L254.5 147.3L268.5 147.3L282.6 147.3L296.6 147.3L310.6 146.3L324.7 145.3L338.7 145.3L352.8 145.3L366.8 145.3L380.8 111.1L394.9 111.1L408.9 109.6L423.0 109.6L437.0 109.6L451.0 109.4L465.1 109.4L479.1 109.2L493.2 109.2L507.2 109.1L521.2 109.1L535.3 109.1L549.3 109.1L563.4 107.6L577.4 106.9L591.4 106.0L605.5 105.3L619.5 97.4L633.6 91.0L647.6 90.1L661.7 90.1L675.7 90.0L689.7 89.4L703.8 89.3L717.8 89.1L731.9 89.1L745.9 89.0L759.9 61.9L774.0 61.9L774.0 206.0L29.8 206.0Z" fill="#2c9c73" opacity=".12"/>
+    <path d="M29.8 206.0L43.9 204.5L57.9 178.4L71.9 174.8L86.0 174.8L100.0 173.7L114.1 173.7L128.1 173.2L142.1 148.0L156.2 147.9L170.2 147.9L184.3 147.9L198.3 147.8L212.4 147.6L226.4 147.3L240.4 147.3L254.5 147.3L268.5 147.3L282.6 147.3L296.6 147.3L310.6 146.3L324.7 145.3L338.7 145.3L352.8 145.3L366.8 145.3L380.8 111.1L394.9 111.1L408.9 109.6L423.0 109.6L437.0 109.6L451.0 109.4L465.1 109.4L479.1 109.2L493.2 109.2L507.2 109.1L521.2 109.1L535.3 109.1L549.3 109.1L563.4 107.6L577.4 106.9L591.4 106.0L605.5 105.3L619.5 97.4L633.6 91.0L647.6 90.1L661.7 90.1L675.7 90.0L689.7 89.4L703.8 89.3L717.8 89.1L731.9 89.1L745.9 89.0L759.9 61.9L774.0 61.9" fill="none" stroke="#2c9c73" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="774" cy="61.9" r="4" fill="#2c9c73" stroke="#202033" stroke-width="2"/>
+  </svg>
+  <text x="24" y="386" fill="#9aa1ad" font-size="13">Explorer snapshot: October 6, 2026 (UTC) · explorer.piratechain.com/stats/</text>
+</svg>
