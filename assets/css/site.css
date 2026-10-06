@@ -328,7 +328,6 @@ footer .discord {
   max-width: 90%;
   margin: 50px auto 20px;
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
   display: block;
   max-height: 400px;
 }
@@ -354,7 +353,7 @@ footer .discord {
   border: 1px solid #2c2c45;
   border-radius: 5px;
   font-size: 18px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.685);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.55);
 }
 .timeline .item {
   position: relative;
