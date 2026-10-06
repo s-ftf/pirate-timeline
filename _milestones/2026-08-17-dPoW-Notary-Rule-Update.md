@@ -3,7 +3,7 @@ date: 2026-08-17 00:00:01
 # Date is the v6.0.0 release; the rule takes effect at the specified block height, separately from Ironwood.
 # Image source: https://piratechain.com/wp-content/uploads/treasure-chest-wallet-1024x341.webp
 title: "dPoW Notary Rule Update"
-image: "/assets/img/posts/Treasure-Chest-Wallet.webp"
+image: "Treasure-Chest-Wallet.webp"
 links:
   - https://github.com/PirateNetwork/pirate/releases/tag/v6.0.0
   - https://github.com/PirateNetwork/pirate/commit/a923ed6ec6d233d2af521a3717b244c324bc2208

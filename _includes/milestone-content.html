@@ -1,8 +1,5 @@
 {% assign milestone = include.milestone %}
-{% assign image_url = milestone.image %}
-{% unless image_url contains '://' %}
-  {% assign image_url = image_url | relative_url %}
-{% endunless %}
+{% assign image_url = '/assets/img/posts/' | append: milestone.image | relative_url %}
 <header class="milestone-header">
   {% if milestone.links and milestone.links != empty %}
     <nav class="milestone-links" aria-label="Related links for {{ milestone.title | escape }}" data-icon-root="{{ '/assets/img/site' | relative_url }}">
@@ -15,8 +12,7 @@
       {% endfor %}
     </nav>
   {% endif %}
-  {% assign heading = milestone.title | escape | prepend: '### ' %}
-  {{ heading | markdownify }}
+  <h3>{% if include.bookmark_id %}<a class="milestone-bookmark" href="#{{ include.bookmark_id | escape }}">{{ milestone.title | escape }}</a>{% else %}{{ milestone.title | escape }}{% endif %}</h3>
 </header>
 <div class="milestone-body">
   {{ include.content }}

@@ -1,7 +1,7 @@
 ---
 date: 2024-01-06 01:00:00
 title: "New Website and New Domain"
-image: "/assets/img/posts/New-Website-Domain.png"
+image: "New-Website-Domain.png"
 links:
   - https://twitter.com/PirateChain/status/1743685765681254500
 ---

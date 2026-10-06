@@ -2,7 +2,7 @@
 date: 2024-03-07 00:00:00
 # Image source: https://piratechain.com/wp-content/uploads/feb-mrecap.webp
 title: "Sapling Proof-Reuse Spam Mitigation"
-image: "/assets/img/posts/Treasure-Chest-v5.8.0.webp"
+image: "Treasure-Chest-v5.8.0.webp"
 links:
   - https://github.com/PirateNetwork/pirate/releases/tag/v5.8.0
   - https://piratechain.com/blog/pirate-chain-monthly-news-february-2024-highlights/

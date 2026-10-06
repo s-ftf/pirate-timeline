@@ -3,7 +3,7 @@ date: 2019-09-14 00:00:00
 # Public announcement date; the legal opinion is dated January 20, 2019.
 # Image: user-provided conclusion excerpt from The Crypto Lawyers, LLP's opinion.
 title: "Howey Test Legal Opinion"
-image: "/assets/img/posts/Howey-Test-Legal-Opinion.jpg"
+image: "Howey-Test-Legal-Opinion.jpg"
 links:
   - https://twitter.com/PirateChain/status/1172830640678559749
   - https://piratechain.com/blog/pirate-chain-press-release-02/

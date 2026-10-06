@@ -4,7 +4,7 @@ date: 2026-10-03 00:00:01
 # The Stats page deployment date is not published. Chart snapshot: October 6, 2026 (UTC).
 # Image source: SVG chart exported from https://explorer.piratechain.com/stats/
 title: "Network Statistics Page"
-image: "/assets/img/posts/Ironwood-Migration-Stats.svg"
+image: "Ironwood-Migration-Stats.svg"
 links:
   - https://explorer.piratechain.com/stats/
 ---

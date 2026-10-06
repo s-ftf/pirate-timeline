@@ -27,13 +27,23 @@ layout: page
       <img src="{{ '/assets/img/site/Pirate_Logo_Ship_Gold_Gradient.svg' | relative_url }}" class="timeline-marker start-marker" alt="Start Marker">
 
       {% assign sorted_posts = site.milestones | sort: 'date' %}
+      {% assign bookmark_ids = '|' %}
       {% for post in sorted_posts %}
+        {% assign title_slug = post.title | slugify %}
+        {% assign bookmark_base = post.date | date: '%Y-%m-%d' | append: '-' | append: title_slug %}
+        {% assign bookmark_id = bookmark_base %}
+        {% for suffix in (1..sorted_posts.size) %}
+          {% assign bookmark_token = bookmark_id | prepend: '|' | append: '|' %}
+          {% unless bookmark_ids contains bookmark_token %}{% break %}{% endunless %}
+          {% assign bookmark_id = bookmark_base | append: '-' | append: suffix %}
+        {% endfor %}
+        {% assign bookmark_ids = bookmark_ids | append: bookmark_id | append: '|' %}
         <div class="item">
           <img src="{{ '/assets/img/site/anchor.svg' | relative_url }}" class="timeline-marker" alt="Timeline Marker">
-          <div class="post {% cycle 'left', 'right' %}">
+          <div class="post {% cycle 'left', 'right' %}" id="{{ bookmark_id | escape }}">
             <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
             <div class="post-content">
-              {% include milestone-content.html milestone=post content=post.content %}
+              {% include milestone-content.html milestone=post content=post.content bookmark_id=bookmark_id %}
             </div>
           </div>
         </div>

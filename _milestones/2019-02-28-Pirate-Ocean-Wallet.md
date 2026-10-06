@@ -3,7 +3,7 @@ date: 2019-02-28 00:00:00
 # Public Beta1 announcement date; earlier code commits are development dates.
 # Image source: https://miro.medium.com/1*j-FYtdYvpMSI94g_TxSPLQ.jpeg
 title: "Pirate Ocean Wallet Introduced"
-image: "/assets/img/posts/Pirate-Ocean-Wallet.jpg"
+image: "Pirate-Ocean-Wallet.jpg"
 links:
   - https://bitcointalk.org/index.php?topic=4979549.msg49952101#msg49952101
   - https://medium.com/piratechain/pirateocean-wallet-guide-1cb80f70364c

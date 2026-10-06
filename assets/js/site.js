@@ -26,24 +26,60 @@ document.addEventListener("DOMContentLoaded", () => {
   reducedMotion.addEventListener("change", scheduleScrollEffects);
   updateScrollEffects();
 
-  document.querySelectorAll(".timeline a, .timeline ~ * a").forEach(link => {
+  document.querySelectorAll(".timeline a:not(.milestone-bookmark), .timeline ~ * a").forEach(link => {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
   });
 
+  const milestones = Array.from(document.querySelectorAll(".timeline .post[id]"));
+  if (milestones.length) {
+    const updateSelectedMilestone = (scroll = false) => {
+      const selected = milestones.find(post => `#${encodeURIComponent(post.id)}` === window.location.hash);
+      milestones.forEach(post => {
+        post.classList.toggle("is-selected", post === selected);
+        const bookmark = post.querySelector(".milestone-bookmark");
+        if (post === selected) bookmark.setAttribute("aria-current", "location");
+        else bookmark.removeAttribute("aria-current");
+      });
+      if (scroll && selected) {
+        selected.scrollIntoView({ block: "start", behavior: reducedMotion.matches ? "auto" : "smooth" });
+      }
+    };
+    milestones.forEach(post => {
+      post.addEventListener("click", event => {
+        if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        const bookmark = event.target.closest(".milestone-bookmark");
+        if (event.target.closest("a, button") && !bookmark) return;
+        if (!bookmark && window.getSelection()?.toString()) return;
+        event.preventDefault();
+        const hash = `#${encodeURIComponent(post.id)}`;
+        if (window.location.hash !== hash) window.history.pushState(null, "", hash);
+        updateSelectedMilestone();
+      });
+    });
+    window.addEventListener("hashchange", () => updateSelectedMilestone(true));
+    updateSelectedMilestone();
+    const initialHash = window.location.hash;
+    const scrollToInitialMilestone = () => {
+      if (window.location.hash === initialHash) updateSelectedMilestone(true);
+    };
+    document.fonts.ready.then(scrollToInitialMilestone);
+    window.addEventListener("load", scrollToInitialMilestone, { once: true });
+  }
+
   const linkSites = {
-    "discord.com": ["Discord", "favicon-discord.png"],
-    "discordapp.com": ["Discord", "favicon-discord.png"],
-    "github.com": ["GitHub", "favicon-github.svg"],
-    "twitter.com": ["Twitter", "favicon-x.png"],
-    "x.com": ["X", "favicon-x.png"],
-    "reddit.com": ["Reddit", "favicon-reddit.png"],
-    "redd.it": ["Reddit", "favicon-reddit.png"],
-    "medium.com": ["Medium"],
-    "bitcointalk.org": ["Bitcointalk", "favicon-bitcointalk.ico"],
-    "coinmarketcap.com": ["CoinMarketCap", "favicon-coinmarketcap.ico"],
-    "youtube.com": ["YouTube", "favicon-youtube.png"],
-    "youtu.be": ["YouTube", "favicon-youtube.png"],
+    "discord.com": ["Discord", "discord.png"],
+    "discordapp.com": ["Discord", "discord.png"],
+    "github.com": ["GitHub", "github.svg"],
+    "twitter.com": ["Twitter", "x.png"],
+    "x.com": ["X", "x.png"],
+    "reddit.com": ["Reddit", "reddit.png"],
+    "redd.it": ["Reddit", "reddit.png"],
+    "medium.com": ["Medium", "medium.png"],
+    "bitcointalk.org": ["Bitcointalk", "bitcointalk.png"],
+    "coinmarketcap.com": ["CoinMarketCap", "coinmarketcap.png"],
+    "youtube.com": ["YouTube", "youtube.png"],
+    "youtu.be": ["YouTube", "youtube.png"],
     "piratechain.com": ["Pirate Chain", "logo-mark.svg"],
     "explorer.piratechain.com": ["Pirate Chain Explorer", "logo-mark.svg"],
     "explorer.pirate.black": ["Pirate Chain Explorer", "logo-mark.svg"],

@@ -2,7 +2,7 @@
 date: 2021-07-07 00:00:00
 # Image source: https://piratechain.com/wp-content/uploads/julr-post.webp
 title: "Offline Signing and Seed Backups"
-image: "/assets/img/posts/Offline-Signing-and-Seed-Backups.webp"
+image: "Offline-Signing-and-Seed-Backups.webp"
 links:
   - https://github.com/PirateNetwork/pirate/releases/tag/v5.2.0
   - https://piratechain.com/blog/the-pirate-post-july-2021-edition/

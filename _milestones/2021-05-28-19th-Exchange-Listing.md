@@ -1,7 +1,7 @@
 ---
 date: 2021-05-28 00:00:00
 title: "19th Exchange Listing"
-image: "/assets/img/posts/Digifinex.png"
+image: "Digifinex.png"
 links:
   - https://twitter.com/DigiFinex/status/1398202665583005696
 ---

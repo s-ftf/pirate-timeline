@@ -1,7 +1,7 @@
 ---
 date: 2019-02-10 00:00:00
 title: "CoinGecko"
-image: "/assets/img/posts/CoinGecko.png"
+image: "CoinGecko.png"
 links:
   - https://twitter.com/PirateChain/status/1094665294868430849
 ---

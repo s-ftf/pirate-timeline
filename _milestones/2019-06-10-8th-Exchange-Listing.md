@@ -1,7 +1,7 @@
 ---
 date: 2019-06-10 00:00:00
 title: "8th Exchange Listing"
-image: "/assets/img/posts/Altilly-1.png"
+image: "Altilly-1.png"
 links:
   - https://twitter.com/altillycom/status/1138012000200613888
 ---

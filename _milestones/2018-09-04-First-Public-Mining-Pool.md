@@ -1,7 +1,7 @@
 ---
 date: 2018-09-04 00:00:00
 title: "First Public Mining Pool"
-image: "/assets/img/posts/First-Public-Pool-768x501.png"
+image: "First-Public-Pool-768x501.png"
 links:
   - https://discordapp.com/channels/412898016371015680/484638479808987137/486503517691969536
 ---

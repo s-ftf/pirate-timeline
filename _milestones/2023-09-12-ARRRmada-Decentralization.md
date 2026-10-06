@@ -1,7 +1,7 @@
 ---
 date: 2023-09-12 00:00:00
 title: "ARRRmada Decentralization"
-image: "/assets/img/posts/ARRRmada-Decentralization-768x284.png"
+image: "ARRRmada-Decentralization-768x284.png"
 links:
   - https://twitter.com/PirateARRRmada/status/1701472697954312544
   - https://github.com/ARRRmada/ARRRmada.com

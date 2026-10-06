@@ -18,15 +18,17 @@ Example: [2018-08-29-The-Idea.md](_milestones/2018-08-29-The-Idea.md)
 ---
 date: 2018-08-29 00:00:00
 title: "The Idea"
-image: /assets/img/posts/The-Idea-is-Born-in-KMD-768x516.png
+image: The-Idea-is-Born-in-KMD-768x516.png
 links:
   - https://discordapp.com/channels/412898016371015680/455851625915875338/484319952849993748
+  - https://satindergrewal.medium.com/pirates-of-komodo-platform-cdc991b424df
 ---
 
 A question in Komodo's Discord starts the discussion.
 ```
 
 Site names/icons and image alt text are automatic. Text beyond four lines gets **Show more**.
+Click a milestone and share its URL. Bookmarks use the date and title, with automatic duplicate suffixes.
 Adjust the time to order posts on the same date.
 [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/).
 

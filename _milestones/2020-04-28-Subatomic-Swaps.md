@@ -1,7 +1,7 @@
 ---
 date: 2020-04-28 00:00:00
 title: "Subatomic Swaps"
-image: "/assets/img/posts/First-SubAtomic-Swap.png"
+image: "First-SubAtomic-Swap.png"
 links:
   - https://twitter.com/techloverhd/status/1255194262909718528
   - https://github.com/PirateNetwork/SubatomicSetup

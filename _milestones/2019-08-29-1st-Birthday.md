@@ -1,7 +1,7 @@
 ---
 date: 2019-08-29 00:00:00
 title: "1st Birthday"
-image: "/assets/img/posts/1st-Birthday.png"
+image: "1st-Birthday.png"
 links:
   - https://twitter.com/PirateChain/status/1167102114939756544
 ---

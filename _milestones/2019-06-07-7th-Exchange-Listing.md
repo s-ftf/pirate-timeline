@@ -1,7 +1,7 @@
 ---
 date: 2019-06-07 00:00:00
 title: "7th Exchange Listing"
-image: "/assets/img/posts/TradeCX-ANN.png"
+image: "TradeCX-ANN.png"
 links:
   - https://twitter.com/PirateChain/status/1137089092103991296
 ---

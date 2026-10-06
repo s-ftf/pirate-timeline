@@ -1,7 +1,7 @@
 ---
 date: 2023-01-14 01:00:00
 title: "wARRR on ETH"
-image: "/assets/img/posts/wARRR-on-ETH.png"
+image: "wARRR-on-ETH.png"
 links:
   - https://twitter.com/PirateChain/status/1614096893784588289
   - https://medium.com/piratechain/pirate-chain-guide-warrr-on-ethereum-56fc0fb4bfb3

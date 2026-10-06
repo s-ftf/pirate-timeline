@@ -1,7 +1,7 @@
 ---
 date: 2020-03-26 00:00:00
 title: "15th Exchange Listing"
-image: "/assets/img/posts/TurtleDEX-Listing-768x503.png"
+image: "TurtleDEX-Listing-768x503.png"
 links:
   - https://discordapp.com/channels/512188534111862784/512188534111862786/692751457169965186
 ---

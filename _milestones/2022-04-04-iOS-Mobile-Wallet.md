@@ -1,7 +1,7 @@
 ---
 date: 2022-04-04 00:00:00
 title: "iOS Mobile Wallet"
-image: "/assets/img/posts/IOS-Wallet-768x354.png"
+image: "IOS-Wallet-768x354.png"
 links:
   - https://piratewallet.io/
 ---

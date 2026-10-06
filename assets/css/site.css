@@ -326,6 +326,7 @@ footer .discord {
   margin-bottom: 30px;
   padding: 10px;
   border-radius: 5px;
+  scroll-margin-top: 24px;
 }
 .post .date {
   font-size: 20px;
@@ -334,15 +335,28 @@ footer .discord {
   margin: 5px auto 10px;
 }
 .milestone-image img {
+  display: block;
   max-width: 100%;
+  max-height: 100%;
 }
-.post .milestone-image img {
+.post .milestone-image {
   width: 90%;
   aspect-ratio: 16 / 9;
-  object-fit: contain;
   margin: 50px auto 20px;
+}
+.post .milestone-image a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.post .milestone-image img {
+  width: auto;
+  height: auto;
   border-radius: 5px;
-  display: block;
+  pointer-events: auto;
 }
 .post.left {
   left: 45%;
@@ -356,6 +370,13 @@ footer .discord {
   color: #fff;
   margin: 15px 0 20px;
   font-size: 26px;
+}
+.milestone-bookmark {
+  color: inherit;
+}
+.milestone-bookmark:focus-visible {
+  outline: 2px solid var(--pirate-doubloon);
+  outline-offset: 4px;
 }
 .milestone-links {
   display: flex;
@@ -399,6 +420,14 @@ footer .discord {
   border: 1px solid #2c2c45;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
+}
+.post:hover .post-content,
+.post.is-selected .post-content {
+  border-color: var(--pirate-doubloon);
+}
+.post.is-selected .post-content {
+  box-shadow: 0 0 16px rgba(187, 150, 69, 0.2);
 }
 .milestone-description {
   display: -webkit-box;
@@ -500,6 +529,11 @@ html.image-viewer-open {
   overflow: hidden;
 }
 .milestone-image a {
+  display: inline-block;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+.milestone-image img {
   cursor: zoom-in;
 }
 .image-viewer {
@@ -563,4 +597,9 @@ html.image-viewer-open {
 .image-viewer-action svg {
   width: 22px;
   height: 22px;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

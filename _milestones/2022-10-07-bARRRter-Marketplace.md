@@ -3,7 +3,7 @@ date: 2022-10-07 00:00:00
 # Date marks publication of the September newsletter; the marketplace launch day is not stated.
 # Image source: https://piratechain.com/wp-content/uploads/barrrter-ss.webp
 title: "bARRRter Marketplace Announced"
-image: "/assets/img/posts/bARRRter-Marketplace.webp"
+image: "bARRRter-Marketplace.webp"
 links:
   - https://medium.com/piratechain/pirate-chain-newsletter-september-edition-ac5bc1131f29
 ---

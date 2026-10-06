@@ -1,7 +1,7 @@
 ---
 date: 2020-02-06 00:00:00
 title: "AltsBit Hack"
-image: "/assets/img/posts/AltsBit-Thing.png"
+image: "AltsBit-Thing.png"
 links:
   - https://twitter.com/altsbit/status/1225319347687653377
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2019-12-18 00:00:00
 title: "12th Exchange Listing"
-image: "/assets/img/posts/CoinEx-Thing.png"
+image: "CoinEx-Thing.png"
 links:
   - https://twitter.com/coinexcom/status/1206858344478044160
 ---

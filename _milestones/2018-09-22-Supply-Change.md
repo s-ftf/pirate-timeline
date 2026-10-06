@@ -1,7 +1,7 @@
 ---
 date: 2018-09-22 00:00:00
 title: "Supply Change"
-image: "/assets/img/posts/Supply-Change-768x417.png"
+image: "Supply-Change-768x417.png"
 links:
   - https://discordapp.com/channels/412898016371015680/484638479808987137/493010356688650240
   - https://satindergrewal.medium.com/pirates-of-komodo-platform-cdc991b424df

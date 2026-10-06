@@ -1,7 +1,7 @@
 ---
 date: 2019-02-08 00:00:00
 title: "2nd Exchange Listing"
-image: "/assets/img/posts/CryptoBridge-ANN.png"
+image: "CryptoBridge-ANN.png"
 links:
   - https://twitter.com/PirateChain/status/1093295306475618304
 ---

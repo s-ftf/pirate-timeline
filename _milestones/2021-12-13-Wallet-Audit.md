@@ -1,7 +1,7 @@
 ---
 date: 2021-12-13 00:00:00
 title: "Wallet Audit"
-image: "/assets/img/posts/wallet-audit-768x429.png"
+image: "wallet-audit-768x429.png"
 links:
   - https://piratechain.com/blog/code-security-review-pirate-wallet/
   - https://piratechain.com/wp-content/uploads/pirate-report.pdf

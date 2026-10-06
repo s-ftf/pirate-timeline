@@ -1,7 +1,7 @@
 ---
 date: 2019-08-24 00:00:00
 title: "CryptoBridge Scandal"
-image: "/assets/img/posts/CryptoBridge-Fiasco.png"
+image: "CryptoBridge-Fiasco.png"
 links:
   - https://twitter.com/PirateChain/status/1165303000081915905
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2018-12-15 00:00:00
 title: "Sapling Activation"
-image: "/assets/img/posts/Sapling-Start-and-Migration.png"
+image: "Sapling-Start-and-Migration.png"
 links:
   - https://twitter.com/PirateChain/status/1073742084933279744
   - https://explorer.piratechain.com/block/00000001c310baa0d02f12a6968e6c669932e16fe07a2b46c4afd6602cabc2ff

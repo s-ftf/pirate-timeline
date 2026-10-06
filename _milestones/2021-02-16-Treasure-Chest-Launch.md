@@ -2,7 +2,7 @@
 date: 2021-02-16 00:00:00
 # Image source: https://piratechain.com/wp-content/uploads/treasure-chest-wallet-1024x341.webp
 title: "Treasure Chest Wallet Launch"
-image: "/assets/img/posts/Treasure-Chest-Wallet.webp"
+image: "Treasure-Chest-Wallet.webp"
 links:
   - https://github.com/PirateNetwork/pirate/releases/tag/v5.0.0
   - https://piratechain.com/blog/the-pirate-post-february-2021-edition/

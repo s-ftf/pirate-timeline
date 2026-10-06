@@ -3,7 +3,7 @@ date: 2023-06-14 00:00:01
 # Date marks publication of the May recap; the partnership announcement day is not stated.
 # Image source: https://exolix.com/presskit.zip
 title: "Exolix Partnership Announced"
-image: "/assets/img/posts/Exolix.png"
+image: "Exolix.png"
 links:
   - https://medium.com/piratechain/pirate-chain-newsletter-update-may-2023-recap-10370ac92215
 ---

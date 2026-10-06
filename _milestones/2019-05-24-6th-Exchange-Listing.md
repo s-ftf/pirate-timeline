@@ -1,7 +1,7 @@
 ---
 date: 2019-05-24 00:00:00
 title: "6th Exchange Listing"
-image: "/assets/img/posts/TradeOgre-ANN.png"
+image: "TradeOgre-ANN.png"
 links:
   - https://twitter.com/PirateChain/status/1131963234469081093
 ---

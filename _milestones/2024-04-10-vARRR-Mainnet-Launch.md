@@ -2,7 +2,7 @@
 date: 2024-04-10 00:00:00
 # Image source: https://piratechain.com/wp-content/uploads/varrr.svg
 title: "vARRR Mainnet Launch"
-image: "/assets/img/posts/vARRR.svg"
+image: "vARRR.svg"
 links:
   - https://piratechain.com/v-arrr/
 ---

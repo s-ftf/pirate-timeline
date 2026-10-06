@@ -1,7 +1,7 @@
 ---
 date: 2023-11-18 01:00:00
 title: "wARRR Discontinuation"
-image: "/assets/img/posts/wARRR-Discontinuation.png"
+image: "wARRR-Discontinuation.png"
 links:
   - https://polarity.exchange/blog/2023/03/security-incident-conclusive-statement/
   - https://polarity.exchange/blog/2023/11/important-announcement-gateway-closure/

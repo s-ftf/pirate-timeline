@@ -1,7 +1,7 @@
 ---
 date: 2018-11-20 00:00:00
 title: "CoinPaprika"
-image: "/assets/img/posts/CoinPaprika-ANN.png"
+image: "CoinPaprika-ANN.png"
 links:
   - https://twitter.com/PirateChain/status/1064981385100713984
 ---

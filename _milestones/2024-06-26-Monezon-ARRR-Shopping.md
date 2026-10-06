@@ -3,7 +3,7 @@ date: 2024-06-26 00:00:00
 # Date marks publication of the May recap; the ARRR integration day is not stated.
 # Image source: https://piratechain.com/wp-content/uploads/image-13.png
 title: "Monezon ARRR Shopping Announced"
-image: "/assets/img/posts/Monezon-Shopping.png"
+image: "Monezon-Shopping.png"
 links:
   - https://piratechain.com/blog/pirate-chain-news-may-2024/
 ---

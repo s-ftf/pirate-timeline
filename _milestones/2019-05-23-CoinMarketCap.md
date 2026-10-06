@@ -1,7 +1,7 @@
 ---
 date: 2019-05-23 00:00:00
 title: "CoinMarketCap"
-image: "/assets/img/posts/CoinMarketCap-ANN.png"
+image: "CoinMarketCap-ANN.png"
 links:
   - https://twitter.com/CoinMarketCap/status/1131350714066907136
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2019-02-04 00:00:00
 title: "First z-Commerce Transaction"
-image: "/assets/img/posts/First-known-official-z-commerce-for-Pirate.png"
+image: "First-known-official-z-commerce-for-Pirate.png"
 links:
   - https://twitter.com/PirateChain/status/1093576416468201473
 ---

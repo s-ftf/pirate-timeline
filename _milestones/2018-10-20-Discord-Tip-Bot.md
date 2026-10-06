@@ -1,7 +1,7 @@
 ---
 date: 2018-10-20 00:00:00
 title: "Discord Tip Bot"
-image: "/assets/img/posts/Discord-Tip-Bot-ANN.png"
+image: "Discord-Tip-Bot-ANN.png"
 links:
   - https://twitter.com/PirateChain/status/1053421010232389632
 ---

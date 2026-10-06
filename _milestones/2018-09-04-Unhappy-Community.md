@@ -1,7 +1,7 @@
 ---
 date: 2018-09-04 00:00:01
 title: "Unhappy Community"
-image: "/assets/img/posts/Unhappy-Community-768x1452.png"
+image: "Unhappy-Community-768x1452.png"
 links:
   - https://bitcointalk.org/index.php?topic=4979549.msg45202485#msg45202485
   - https://satindergrewal.medium.com/pirates-of-komodo-platform-cdc991b424df

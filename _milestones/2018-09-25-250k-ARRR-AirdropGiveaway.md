@@ -1,7 +1,7 @@
 ---
 date: 2018-09-25 00:00:00
 title: "250k ARRR Airdrop/Giveaway"
-image: "/assets/img/posts/250k-Airdrop_Giveaway-768x269.png"
+image: "250k-Airdrop_Giveaway-768x269.png"
 links:
   - https://bitcointalk.org/index.php?topic=4979549.msg46143299#msg46143299
 ---

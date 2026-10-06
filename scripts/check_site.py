@@ -21,10 +21,13 @@ class PageParser(HTMLParser):
         self.references = []
         self.canonical = []
         self.metadata = {}
+        self.ids = Counter()
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         self.tags[tag] += 1
+        if attrs.get("id"):
+            self.ids[attrs["id"]] += 1
         for attribute in ("src", "href"):
             if attrs.get(attribute):
                 self.references.append(attrs[attribute])
@@ -87,6 +90,9 @@ def main():
         document.feed(page.read_text(encoding="utf-8"))
         if any(document.tags[tag] != 1 for tag in ("html", "head", "body")):
             errors.append(f"{relative}: expected one html, head, and body element")
+        for identifier, count in document.ids.items():
+            if count > 1:
+                errors.append(f"{relative}: duplicate id: {identifier}")
         if document.canonical != [page_url] or document.metadata.get("og:url") != page_url:
             errors.append(f"{relative}: incorrect canonical or Open Graph URL; expected {page_url}")
         for key in ("og:image", "twitter:image"):
@@ -96,6 +102,8 @@ def main():
             else:
                 check_reference(image, page_url, relative)
         for reference in document.references:
+            if reference.startswith("#") and len(reference) > 1 and unquote(reference[1:]) not in document.ids:
+                errors.append(f"{relative}: missing bookmark target: {reference}")
             check_reference(reference, page_url, relative)
 
     for css in root.rglob("*.css"):

@@ -1,7 +1,7 @@
 ---
 date: 2019-06-11 00:00:00
 title: "Pirate Full Node Chest"
-image: "/assets/img/posts/Chest.png"
+image: "Chest.png"
 links:
   - https://twitter.com/CryptoCloaks/status/1138418649335848960
 ---
