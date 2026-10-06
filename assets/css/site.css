@@ -350,7 +350,8 @@ footer .discord {
 }
 .post-content {
   padding: 20px;
-  background: #272727;
+  background: #202033;
+  border: 1px solid #2c2c45;
   border-radius: 5px;
   font-size: 18px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.685);
