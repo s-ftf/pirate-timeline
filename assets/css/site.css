@@ -44,6 +44,15 @@ body {
   color: var(--text-main);
   font-family: var(--pirate-font-alternative);
   overflow-x: hidden;
+  isolation: isolate;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.06), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 a {
   color: var(--pirate-doubloon);
