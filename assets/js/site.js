@@ -31,6 +31,48 @@ document.addEventListener("DOMContentLoaded", () => {
     link.rel = "noopener noreferrer";
   });
 
+  const descriptions = document.querySelectorAll(".post-content > p:not(:has(img))");
+  if (descriptions.length) {
+    const setDescriptionExpanded = (description, expanded) => {
+      const button = description.nextElementSibling;
+      const action = expanded ? "Show less" : "Show more";
+      description.classList.toggle("is-expanded", expanded);
+      button.textContent = action;
+      button.setAttribute("aria-expanded", String(expanded));
+      button.setAttribute("aria-label", `${action} about ${description.parentElement.querySelector("h3").textContent}`);
+    };
+    const updateDescription = description => {
+      const lineHeight = parseFloat(getComputedStyle(description).lineHeight);
+      const button = description.nextElementSibling;
+      button.hidden = description.scrollHeight <= lineHeight * 4 + 1;
+      if (button.hidden) setDescriptionExpanded(description, false);
+    };
+    const descriptionObserver = new ResizeObserver(entries => {
+      entries.forEach(entry => updateDescription(entry.target));
+    });
+    descriptions.forEach((description, index) => {
+      description.classList.add("milestone-description");
+      description.id = `milestone-description-${index + 1}`;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "milestone-toggle";
+      button.setAttribute("aria-controls", description.id);
+      button.hidden = true;
+      description.after(button);
+      setDescriptionExpanded(description, false);
+      button.addEventListener("click", () => {
+        setDescriptionExpanded(description, !description.classList.contains("is-expanded"));
+      });
+      description.addEventListener("focusin", () => {
+        if (!button.hidden) setDescriptionExpanded(description, true);
+      });
+      descriptionObserver.observe(description);
+    });
+    const updateDescriptions = () => descriptions.forEach(updateDescription);
+    updateDescriptions();
+    document.fonts.ready.then(updateDescriptions);
+  }
+
   const viewer = document.getElementById("image-viewer");
   if (!viewer || typeof viewer.showModal !== "function") return;
 

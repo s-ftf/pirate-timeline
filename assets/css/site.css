@@ -364,6 +364,28 @@ footer .discord {
   border-radius: 5px;
   font-size: 18px;
 }
+.milestone-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.milestone-description.is-expanded {
+  display: block;
+}
+.milestone-toggle {
+  margin-top: 8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--pirate-doubloon);
+  font: inherit;
+  cursor: pointer;
+}
+.milestone-toggle:hover {
+  color: var(--pirate-neon);
+}
 .timeline .item {
   position: relative;
 }
