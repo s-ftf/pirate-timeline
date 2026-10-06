@@ -4,7 +4,7 @@ date: 2021-12-13 00:00:00
 
 ### Wallet Audit
 
-The Pirate Chain team commissions a third-party code audit of the Treasure Chest full node wallet from Jean-Philippe Aumasson, a cryptography expert, co-founder of Teserakt, and head of security at Taurus Group. Aumasson holds a Ph.D. from EPFL (2009) and has years of experience in applied cryptography, security architecture, and cybersecurity. He wrote Serious Cryptography (No Starch Press, 2017) and helped design widely used algorithms such as BLAKE2 and SipHash. He has performed numerous security assessments for blockchain and cryptocurrency organizations and has spoken at Black Hat, DEFCON, RSAC, CCC, and Infiltrate about applied cryptography, quantum computing, and platform security. [[link]](https://pirate.black/code-security-review-pirate-wallet/)
+The Pirate Chain team commissions a third-party code audit of the Treasure Chest full node wallet from Jean-Philippe Aumasson, a cryptography expert, co-founder of Teserakt, and head of security at Taurus Group. Aumasson holds a Ph.D. from EPFL (2009) and has years of experience in applied cryptography, security architecture, and cybersecurity. He wrote Serious Cryptography (No Starch Press, 2017) and helped design widely used algorithms such as BLAKE2 and SipHash. He has performed numerous security assessments for blockchain and cryptocurrency organizations and has spoken at Black Hat, DEFCON, RSAC, CCC, and Infiltrate about applied cryptography, quantum computing, and platform security. [[link]](https://piratechain.com/blog/code-security-review-pirate-wallet/) [[report]](https://piratechain.com/wp-content/uploads/pirate-report.pdf)
 
 [![Wallet Audit](assets/img/posts/wallet-audit-768x429.png)](assets/img/posts/wallet-audit-768x429.png)
 

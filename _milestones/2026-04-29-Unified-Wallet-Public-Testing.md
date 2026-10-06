@@ -6,6 +6,6 @@ date: 2026-04-29 00:00:00
 
 ### Unified Wallet Public Testing Announced
 
-Pirate Chain announces public testing of its unified light wallet, alongside Android and iOS SDKs and a React Native plugin for wallet integrations. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-april-2026/)
+Pirate Chain announces public testing of its unified light wallet, alongside Android and iOS SDKs and a React Native plugin for wallet integrations. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-april-2026/) [[code]](https://github.com/PirateNetwork/Stashi-Wallet)
 
 [![Unified Wallet Public Testing Announced](assets/img/posts/Unified-Wallet-Public-Testing.webp)](assets/img/posts/Unified-Wallet-Public-Testing.webp)

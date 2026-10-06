@@ -5,6 +5,6 @@ date: 2025-07-14 00:00:00
 
 ### Community Crowdfunding Launch
 
-Pirate Chain launches a crowdfunding platform for community projects, using public viewing keys so contributors can verify donations. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-july-2025/)
+Pirate Chain launches a crowdfunding platform for community projects, using public viewing keys so contributors can verify donations. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-july-2025/) [[platform]](https://piratechain.com/crowdfunding/)
 
 [![Community Crowdfunding Launch](assets/img/posts/Community-Crowdfunding.webp)](assets/img/posts/Community-Crowdfunding.webp)

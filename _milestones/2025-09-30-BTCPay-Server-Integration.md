@@ -6,6 +6,6 @@ date: 2025-09-30 00:00:00
 
 ### BTCPay Server Integration Completed
 
-Pirate Chain announces completion of its community-funded BTCPay Server integration, enabling merchants to accept ARRR directly without a third-party payment processor. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-september-2025/)
+Pirate Chain announces completion of its community-funded BTCPay Server integration, enabling merchants to accept ARRR directly without a third-party payment processor. [[link]](https://piratechain.com/blog/pirate-chain-monthly-update-september-2025/) [[code]](https://github.com/PirateNetwork/pirate-btcpay)
 
 [![BTCPay Server Integration Completed](assets/img/posts/BTCPay-ARRR-Invoice.png)](assets/img/posts/BTCPay-ARRR-Invoice.png)

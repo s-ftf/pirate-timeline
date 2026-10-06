@@ -5,6 +5,6 @@ date: 2025-12-01 00:00:00
 
 ### Cipher Hardware Wallet Preorders
 
-ZTH Alliance opens orders for the Cipher hardware wallet, a community-built ARRR device with a touchscreen and Treasure Chest transaction signing. [[link]](https://zthalliance.com/shop/)
+ZTH Alliance opens orders for the Cipher hardware wallet, a community-built ARRR device with a touchscreen and Treasure Chest transaction signing. [[link]](https://zthalliance.com/shop/) [[details]](https://piratechain.com/blog/pirate-chain-monthly-update-december-2025/)
 
 [![Cipher Hardware Wallet Preorders](assets/img/posts/Cipher-Hardware-Wallet.jpg)](assets/img/posts/Cipher-Hardware-Wallet.jpg)
