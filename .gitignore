@@ -8,6 +8,10 @@
 /vendor/
 /.bundle/
 
+# Python verification helper caches
+__pycache__/
+*.py[cod]
+
 # Local environment and editor/OS files
 /.aws
 .env
