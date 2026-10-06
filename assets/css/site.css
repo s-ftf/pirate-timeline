@@ -36,6 +36,7 @@ html {
   width: 100%;
   height: 100%;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 body {
   font-size: 16px;
@@ -192,6 +193,14 @@ footer .discord {
 }
 
 /* ----- hero-section ----- */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: -25% 0;
+  background: var(--hero-background) center / cover no-repeat;
+  transform: translate3d(0, var(--parallax-offset, 0px), 0);
+  z-index: 0;
+}
 .hero-section::before {
   content: '';
   position: absolute;
@@ -209,11 +218,9 @@ footer .discord {
 }
 .hero-section {
   position: relative;
+  overflow: hidden;
   padding-bottom: 100px;
   padding-top: 120px;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
   text-align: center;
 }
 .hero-section .logo {
@@ -419,4 +426,75 @@ footer .discord {
   .post-content {
     font-size: 16px;
   }
+}
+
+/* ----- milestone image viewer ----- */
+html.image-viewer-open {
+  overflow: hidden;
+}
+.post-content a:has(img),
+main.content a:has(img) {
+  cursor: zoom-in;
+}
+.image-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100vh;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 72px 24px 24px;
+  border: none;
+  background: transparent;
+  color: var(--pirate-cloud);
+  overflow: hidden;
+}
+.image-viewer[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-viewer::backdrop {
+  background: rgba(0, 0, 0, 0.88);
+}
+.image-viewer-image {
+  display: block;
+  width: min(100%, calc((100vh - 96px) * var(--image-ratio, 1)));
+  width: min(100%, calc((100dvh - 96px) * var(--image-ratio, 1)));
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.image-viewer-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+}
+.image-viewer-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: #272727;
+  color: var(--pirate-cloud);
+  cursor: pointer;
+}
+.image-viewer-action:hover {
+  color: var(--pirate-neon);
+  border-color: var(--pirate-doubloon);
+}
+.image-viewer-action:focus-visible {
+  outline: 2px solid var(--pirate-neon);
+  outline-offset: 3px;
+}
+.image-viewer-action svg {
+  width: 22px;
+  height: 22px;
 }
