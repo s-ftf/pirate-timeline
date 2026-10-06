@@ -6,4 +6,4 @@ links:
   - https://twitter.com/p2pb2b/status/1164804620901736448
 ---
 
-ARRR is listed on the P2PB2B exchange.
+P2PB2B lists ARRR, becoming the tenth exchange to offer trading in Pirate Chain's currency.

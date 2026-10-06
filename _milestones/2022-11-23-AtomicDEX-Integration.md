@@ -6,4 +6,4 @@ links:
   - https://twitter.com/AtomicDEX/status/1595501325848088578
 ---
 
-ARRR is integrated into the desktop version of AtomicDEX.
+AtomicDEX adds ARRR support to its desktop app, expanding the options for holding and exchanging ARRR.

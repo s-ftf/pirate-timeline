@@ -6,4 +6,4 @@ links:
   - https://twitter.com/DigiFinex/status/1398202665583005696
 ---
 
-DigiFinex becomes the 19th exchange to list ARRR.
+DigiFinex lists ARRR, becoming the nineteenth exchange to offer trading in Pirate Chain's currency.

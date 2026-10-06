@@ -6,4 +6,4 @@ links:
   - https://twitter.com/cointradernik/status/1179665144995033088
 ---
 
-Nik Patel publishes a coin report on ARRR.
+Nik Patel publishes a report on ARRR, examining Pirate Chain's community, development and price history.

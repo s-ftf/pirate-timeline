@@ -7,4 +7,4 @@ links:
   - https://medium.com/piratechain/pirate-chain-newsletter-january-2023-recap-780ae2fe9835
 ---
 
-ARRR is integrated into Edge Wallet.
+Edge Wallet adds ARRR support, providing a mobile wallet for holding and exchanging the currency.

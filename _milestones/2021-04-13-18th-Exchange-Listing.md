@@ -6,4 +6,4 @@ links:
   - https://twitter.com/Changelly_team/status/1381954647020040195
 ---
 
-Changelly becomes the 18th exchange to list ARRR.
+Changelly adds ARRR to its cryptocurrency swap service, becoming Pirate Chain's eighteenth exchange listing.

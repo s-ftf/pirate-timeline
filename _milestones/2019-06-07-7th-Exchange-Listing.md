@@ -6,4 +6,4 @@ links:
   - https://twitter.com/PirateChain/status/1137089092103991296
 ---
 
-A new exchange named TradeCX lists ARRR for free.
+TradeCX lists ARRR without a listing fee, becoming the seventh exchange to offer trading in ARRR.

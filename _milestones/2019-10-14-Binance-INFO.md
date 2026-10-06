@@ -6,4 +6,4 @@ links:
   - https://twitter.com/Binance_Info/status/1184680630048542720
 ---
 
-ARRR is listed on Binance Info.
+Binance Info adds an ARRR profile, giving Pirate Chain a presence on its cryptocurrency information platform.

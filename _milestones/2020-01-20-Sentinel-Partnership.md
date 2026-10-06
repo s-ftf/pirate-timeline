@@ -6,4 +6,4 @@ links:
   - https://sentinel.co/
 ---
 
-Pirate Chain partners with Sentinel to work on a dVPN for Pirate OS.
+Pirate Chain partners with Sentinel to bring decentralized VPN connectivity to the Pirate OS environment.

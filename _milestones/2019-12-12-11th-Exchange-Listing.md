@@ -6,4 +6,4 @@ links:
   - https://bilaxy.zendesk.com/hc/en-us/articles/360037438512-Bilaxy-lists-Pirate-Chain-ARRR-
 ---
 
-Bilaxy lists ARRR with an ARRR/USDT trading pair.
+Bilaxy becomes the eleventh exchange to list ARRR, opening trading with an ARRR/USDT pair.

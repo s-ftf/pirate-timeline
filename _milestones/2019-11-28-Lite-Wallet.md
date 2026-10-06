@@ -7,4 +7,4 @@ links:
   - https://github.com/PirateNetwork/PirateWallet-Lite
 ---
 
-The lite wallet is officially released.
+Pirate Chain releases its lite wallet, enabling shielded ARRR payments without downloading the full blockchain.

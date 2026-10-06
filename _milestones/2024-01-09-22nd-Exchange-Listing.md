@@ -6,4 +6,4 @@ links:
   - https://www.mexc.com/en-US/support/articles/17827791512676
 ---
 
-MEXC becomes the 22nd exchange to list ARRR.
+MEXC lists ARRR, becoming the twenty-second exchange to offer trading in Pirate Chain's currency.

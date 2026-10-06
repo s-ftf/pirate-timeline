@@ -6,4 +6,4 @@ links:
   - https://twitter.com/SafeCoins/status/1218384466843815936
 ---
 
-SafeTrade lists ARRR.
+SafeTrade lists ARRR, becoming the thirteenth exchange to offer trading in Pirate Chain's currency.

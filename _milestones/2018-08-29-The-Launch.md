@@ -7,4 +7,4 @@ links:
   - https://satindergrewal.medium.com/pirates-of-komodo-platform-cdc991b424df
 ---
 
-The chain launches later that day.
+Pirate Chain launches later that day, turning the initial Discord discussion into a live ARRR blockchain.

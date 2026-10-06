@@ -6,4 +6,4 @@ links:
   - https://twitter.com/CryptoCloaks/status/1138418649335848960
 ---
 
-The Pirate Full Node Chest prototype is completed.
+CryptoCloaks completes the Pirate Full Node Chest prototype, a node housed in a miniature treasure chest.

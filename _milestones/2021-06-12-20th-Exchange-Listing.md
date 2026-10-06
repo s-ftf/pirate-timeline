@@ -6,4 +6,4 @@ links:
   - https://twitter.com/gate_io/status/1404354294233681923
 ---
 
-Gate.io becomes the 20th exchange to list ARRR.
+Gate.io lists ARRR, becoming the twentieth exchange to offer trading in Pirate Chain's currency.

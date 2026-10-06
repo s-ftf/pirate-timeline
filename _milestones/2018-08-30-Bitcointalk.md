@@ -7,4 +7,4 @@ links:
   - https://bitcointalk.org/index.php?topic=4979549
 ---
 
-grewalsatinder publishes the Bitcointalk announcement thread.
+grewalsatinder announces Pirate Chain on Bitcointalk, introducing the project to the crypto community.

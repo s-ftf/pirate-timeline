@@ -6,4 +6,4 @@ links:
   - https://twitter.com/PirateChain/status/1167102114939756544
 ---
 
-Pirate Chain celebrates its first birthday.
+Pirate Chain celebrates its first birthday, marking one year since the launch of its shielded blockchain.

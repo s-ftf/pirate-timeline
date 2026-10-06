@@ -6,4 +6,4 @@ links:
   - https://twitter.com/zaddex_com/status/1144156739173879808
 ---
 
-ARRR is listed on Zaddex.io.
+Zaddex.io lists ARRR, becoming the ninth exchange to offer trading in Pirate Chain's currency.

@@ -6,4 +6,4 @@ links:
   - https://coinmarketcap.com/currencies/pirate-chain/
 ---
 
-ARRR's market capitalization exceeds $1 billion.
+ARRR's market capitalization passes $1 billion, based on the market price of its circulating supply.

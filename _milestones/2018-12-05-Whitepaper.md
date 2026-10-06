@@ -7,4 +7,4 @@ links:
   - https://github.com/PirateNetwork/pirate-docs/blob/master/assets/whitepaper/obsolete/OBSOLETE_The_Pirate_Code_V1.0.pdf
 ---
 
-The first version of the whitepaper, The Pirate Code, is released.
+Pirate Chain releases The Pirate Code, its first whitepaper outlining the project's privacy-focused design.

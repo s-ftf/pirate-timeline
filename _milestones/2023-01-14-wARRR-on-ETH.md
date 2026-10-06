@@ -7,4 +7,4 @@ links:
   - https://medium.com/piratechain/pirate-chain-guide-warrr-on-ethereum-56fc0fb4bfb3
 ---
 
-A wrapped version of ARRR called “wARRR” launches on Ethereum.
+wARRR launches on Ethereum, giving wrapped ARRR access to DeFi through public ERC-20 token transactions.

@@ -6,4 +6,4 @@ links:
   - https://twitter.com/PirateChain/status/1064981385100713984
 ---
 
-CoinPaprika becomes the first coin-tracking website to list ARRR.
+CoinPaprika becomes the first coin-tracking website to list ARRR, making its market data easier to find.

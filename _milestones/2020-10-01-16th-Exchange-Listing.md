@@ -6,4 +6,4 @@ links:
   - https://twitter.com/PirateChain/status/1311735586949079042
 ---
 
-Polarity becomes the 16th exchange to list ARRR.
+Polarity lists ARRR, becoming the sixteenth exchange to offer trading in Pirate Chain's currency.

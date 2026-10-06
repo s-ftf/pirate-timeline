@@ -6,4 +6,4 @@ links:
   - https://twitter.com/PirateChain/status/1062520914191900673
 ---
 
-Blockfolio adds ARRR to its portfolio tracking app.
+Blockfolio adds ARRR to its tracking app, letting users follow their holdings alongside other cryptocurrencies.

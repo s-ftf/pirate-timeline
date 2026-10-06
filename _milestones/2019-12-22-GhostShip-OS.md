@@ -7,4 +7,4 @@ links:
   - https://github.com/PirateNetwork/PirateOS/releases/tag/pirateOSiso
 ---
 
-The first iteration of Pirate OS is released.
+GhostShip OS launches as a USB-bootable environment for the lite wallet, with Tor integration and VPN support.

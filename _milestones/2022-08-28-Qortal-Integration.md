@@ -6,4 +6,4 @@ links:
   - https://github.com/Qortal/qortal-ui/releases/tag/v2.0.0
 ---
 
-ARRR is integrated into Qortal.
+Qortal UI v2.0.0 adds a Pirate Chain wallet and trade support, bringing ARRR into its decentralized platform.

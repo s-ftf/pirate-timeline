@@ -7,4 +7,4 @@ links:
   - https://github.com/PirateNetwork/piratepaperwallet
 ---
 
-A paper wallet for ARRR is released.
+A paper wallet generator for ARRR is released, allowing users to create shielded addresses and keep their keys offline.

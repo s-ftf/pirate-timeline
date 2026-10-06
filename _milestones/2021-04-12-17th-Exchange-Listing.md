@@ -6,4 +6,4 @@ links:
   - https://twitter.com/swapzoneio/status/1381612429503791106
 ---
 
-Swapzone becomes the 17th exchange to list ARRR.
+Swapzone lists ARRR, adding another cryptocurrency swap option as Pirate Chain's seventeenth exchange listing.

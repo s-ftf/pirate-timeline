@@ -6,4 +6,4 @@ links:
   - https://twitter.com/coinexcom/status/1206858344478044160
 ---
 
-CoinEx lists ARRR and hosts a 20,000 ARRR trading competition.
+CoinEx becomes the twelfth exchange to list ARRR and celebrates with a 20,000 ARRR trading competition.

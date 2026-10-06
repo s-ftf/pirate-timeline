@@ -6,4 +6,4 @@ links:
   - https://twitter.com/kucoincom/status/1406902167978463239
 ---
 
-KuCoin becomes the 21st exchange to list ARRR.
+KuCoin lists ARRR, becoming the twenty-first exchange to offer trading in Pirate Chain's currency.

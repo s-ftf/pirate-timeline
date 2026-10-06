@@ -6,4 +6,4 @@ links:
   - https://www.youtube.com/watch?v=f_pTG0iZsa0
 ---
 
-The official animated explainer video is released.
+Pirate Chain releases an official animated explainer video, introducing ARRR and the project's focus on privacy.

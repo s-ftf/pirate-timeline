@@ -6,4 +6,4 @@ links:
   - https://discordapp.com/channels/512188534111862784/512188534111862786/692751457169965186
 ---
 
-TurtleNetwork DEX becomes the 15th exchange to list ARRR.
+TurtleNetwork DEX lists ARRR, giving users a decentralized trading option as its fifteenth exchange listing.

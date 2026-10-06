@@ -6,4 +6,4 @@ links:
   - https://twitter.com/CoinMarketCap/status/1131350714066907136
 ---
 
-CoinMarketCap lists ARRR.
+CoinMarketCap lists ARRR, adding its price, trading volume and market capitalization to the tracking website.
