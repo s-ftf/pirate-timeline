@@ -62,10 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
       [label ? label[0].toUpperCase() + label.slice(1) : link.href];
     link.title = name;
     link.setAttribute("aria-label", name);
+    const siteName = document.createElement("span");
+    siteName.textContent = name;
+    link.append(siteName);
     if (iconFile) {
       const icon = document.createElement("img");
       icon.alt = "";
-      icon.addEventListener("load", () => link.replaceChildren(icon));
+      icon.addEventListener("load", () => link.querySelector("svg").replaceWith(icon));
       icon.src = `${link.parentElement.dataset.iconRoot}/${iconFile}`;
     }
   });

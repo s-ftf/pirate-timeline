@@ -367,8 +367,11 @@ footer .discord {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
+  gap: 6px;
+  padding: 5px 8px;
   height: 32px;
+  font-size: 13px;
+  white-space: nowrap;
   border: 1px solid #2c2c45;
   border-radius: 5px;
   flex-shrink: 0;
