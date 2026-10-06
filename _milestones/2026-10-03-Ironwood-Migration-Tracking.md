@@ -5,8 +5,8 @@ date: 2026-10-03 00:00:01
 # Image source: SVG chart exported from https://explorer.piratechain.com/stats/
 ---
 
-### Ironwood Migration Tracking
+### Network Statistics Page
 
 ARRR begins moving from Sapling into Ironwood. The explorer's updated Stats page tracks pool balances and migration progress. [[link]](https://explorer.piratechain.com/stats/)
 
-[![Ironwood Migration Tracking](assets/img/posts/Ironwood-Migration-Stats.svg)](assets/img/posts/Ironwood-Migration-Stats.svg)
+[![Network statistics showing ARRR's migration to Ironwood](assets/img/posts/Ironwood-Migration-Stats.svg)](assets/img/posts/Ironwood-Migration-Stats.svg)
