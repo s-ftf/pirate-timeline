@@ -1,4 +1,28 @@
-{%- assign asset_root = '/assets/' | relative_url -%}
-{%- assign image_prefix = 'src="' | append: asset_root -%}
-{%- assign link_prefix = 'href="' | append: asset_root -%}
-{{- include.content | replace: 'src="assets/', image_prefix | replace: 'href="assets/', link_prefix -}}
+{% assign milestone = include.milestone %}
+{% assign image_url = milestone.image %}
+{% unless image_url contains '://' %}
+  {% assign image_url = image_url | relative_url %}
+{% endunless %}
+<header class="milestone-header">
+  {% if milestone.links and milestone.links != empty %}
+    <nav class="milestone-links" aria-label="Related links for {{ milestone.title | escape }}" data-icon-root="{{ '/assets/img/site' | relative_url }}">
+      {% for link in milestone.links %}
+        <a class="milestone-link" href="{{ link | escape }}" title="{{ link | escape }}" aria-label="{{ link | escape }}" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-2 2M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l2-2" />
+          </svg>
+        </a>
+      {% endfor %}
+    </nav>
+  {% endif %}
+  {% assign heading = milestone.title | escape | prepend: '### ' %}
+  {{ heading | markdownify }}
+</header>
+<div class="milestone-body">
+  {{ include.content }}
+</div>
+<p class="milestone-image">
+  <a href="{{ image_url | escape }}" title="{{ milestone.title | escape }}">
+    <img src="{{ image_url | escape }}" alt="{{ milestone.title | escape }}" />
+  </a>
+</p>

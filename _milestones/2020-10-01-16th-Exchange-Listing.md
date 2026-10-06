@@ -1,10 +1,9 @@
 ---
 date: 2020-10-01 00:00:00
+title: "16th Exchange Listing"
+image: "/assets/img/posts/Polarity-Listing.png"
+links:
+  - https://twitter.com/PirateChain/status/1311735586949079042
 ---
 
-### 16th Exchange Listing
-
-Polarity becomes the 16th exchange to list ARRR. [[link]](https://twitter.com/PirateChain/status/1311735586949079042)
-
-[![16th Exchange Listing](assets/img/posts/Polarity-Listing.png)](assets/img/posts/Polarity-Listing.png)
-
+Polarity becomes the 16th exchange to list ARRR.

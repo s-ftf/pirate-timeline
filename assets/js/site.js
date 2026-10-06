@@ -31,7 +31,46 @@ document.addEventListener("DOMContentLoaded", () => {
     link.rel = "noopener noreferrer";
   });
 
-  const descriptions = document.querySelectorAll(".post-content > p:not(:has(img))");
+  const linkSites = {
+    "discord.com": ["Discord", "favicon-discord.png"],
+    "discordapp.com": ["Discord", "favicon-discord.png"],
+    "github.com": ["GitHub", "favicon-github.svg"],
+    "twitter.com": ["Twitter", "favicon-x.png"],
+    "x.com": ["X", "favicon-x.png"],
+    "reddit.com": ["Reddit", "favicon-reddit.png"],
+    "redd.it": ["Reddit", "favicon-reddit.png"],
+    "medium.com": ["Medium"],
+    "bitcointalk.org": ["Bitcointalk", "favicon-bitcointalk.ico"],
+    "coinmarketcap.com": ["CoinMarketCap", "favicon-coinmarketcap.ico"],
+    "youtube.com": ["YouTube", "favicon-youtube.png"],
+    "youtu.be": ["YouTube", "favicon-youtube.png"],
+    "piratechain.com": ["Pirate Chain", "logo-mark.svg"],
+    "explorer.piratechain.com": ["Pirate Chain Explorer", "logo-mark.svg"],
+    "explorer.pirate.black": ["Pirate Chain Explorer", "logo-mark.svg"],
+    "docs.piratechain.com": ["Pirate Chain Docs", "logo-mark.svg"],
+    "bilaxy.zendesk.com": ["Bilaxy"],
+    "kucoin.com": ["KuCoin"],
+    "mexc.com": ["MEXC"],
+    "zthalliance.com": ["ZTH Alliance"],
+    "piratewallet.io": ["Pirate Wallet"]
+  };
+  document.querySelectorAll(".milestone-link").forEach(link => {
+    const hostname = new URL(link.href).hostname.replace(/^www\./, "");
+    const domain = hostname.split(".").slice(-2).join(".");
+    const label = domain.split(".")[0];
+    const [name, iconFile] = linkSites[hostname] || linkSites[domain] ||
+      [label ? label[0].toUpperCase() + label.slice(1) : link.href];
+    link.title = name;
+    link.setAttribute("aria-label", name);
+    if (iconFile) {
+      const icon = document.createElement("img");
+      icon.alt = "";
+      icon.addEventListener("load", () => link.replaceChildren(icon));
+      icon.src = `${link.parentElement.dataset.iconRoot}/${iconFile}`;
+    }
+  });
+
+  const descriptions = document.querySelectorAll(".milestone-body");
   if (descriptions.length) {
     const setDescriptionExpanded = (description, expanded) => {
       const button = description.nextElementSibling;
@@ -80,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const openImage = document.getElementById("image-viewer-open");
   const downloadImage = document.getElementById("image-viewer-download");
 
-  document.querySelectorAll(".post-content img, main.content img").forEach(image => {
+  document.querySelectorAll(".milestone-image img").forEach(image => {
     const link = image.closest("a");
     if (!link) return;
     link.setAttribute("aria-haspopup", "dialog");

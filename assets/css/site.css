@@ -333,7 +333,10 @@ footer .discord {
   display: block;
   margin: 5px auto 10px;
 }
-.post img {
+.milestone-image img {
+  max-width: 100%;
+}
+.post .milestone-image img {
   width: 90%;
   aspect-ratio: 16 / 9;
   object-fit: contain;
@@ -349,10 +352,40 @@ footer .discord {
   left: 55%;
   transform: translateX(0);
 }
-.post h3 {
+.milestone-header h3 {
   color: #fff;
-  margin: 35px auto 20px;
+  margin: 15px 0 20px;
   font-size: 26px;
+}
+.milestone-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.milestone-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #2c2c45;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.milestone-link:hover {
+  border-color: var(--pirate-doubloon);
+  background: #26263d;
+}
+.milestone-link:focus-visible {
+  outline: 2px solid var(--pirate-neon);
+  outline-offset: 3px;
+}
+.milestone-link svg,
+.milestone-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 .post.left .date {
   text-align: right;
@@ -463,8 +496,7 @@ footer .discord {
 html.image-viewer-open {
   overflow: hidden;
 }
-.post-content a:has(img),
-main.content a:has(img) {
+.milestone-image a {
   cursor: zoom-in;
 }
 .image-viewer {

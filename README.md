@@ -17,17 +17,17 @@ Example: [2018-08-29-The-Idea.md](_milestones/2018-08-29-The-Idea.md)
 ```markdown
 ---
 date: 2018-08-29 00:00:00
+title: "The Idea"
+image: /assets/img/posts/The-Idea-is-Born-in-KMD-768x516.png
+links:
+  - https://discordapp.com/channels/412898016371015680/455851625915875338/484319952849993748
 ---
 
-### The Idea
-
-A question gets asked in the ask-jl777 channel in the Komodo Discord, which started the discussion. [[link]](https://discordapp.com/channels/412898016371015680/455851625915875338/484319952849993748)
-
-[![The Idea](assets/img/posts/The-Idea-is-Born-in-KMD-768x516.png)](assets/img/posts/The-Idea-is-Born-in-KMD-768x516.png)
-
+A question in Komodo's Discord starts the discussion.
 ```
 
-Use `###` for the title and link each image as shown. Adjust the time to order posts on the same date.
+Site names/icons and image alt text are automatic. Text beyond four lines gets **Show more**.
+Adjust the time to order posts on the same date.
 [Markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/).
 
 ## Run locally

@@ -33,7 +33,7 @@ layout: page
           <div class="post {% cycle 'left', 'right' %}">
             <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
             <div class="post-content">
-              {% include milestone-content.html content=post.content %}
+              {% include milestone-content.html milestone=post content=post.content %}
             </div>
           </div>
         </div>
